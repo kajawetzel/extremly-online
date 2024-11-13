@@ -5,6 +5,97 @@
 }
 
 body{
+	hyphens: auto;
 	font-family: "CompagnonLight";
+	background-color: rgb(230, 215, 215);
 }
 
+.assignment-section{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.assignment-container{
+	margin: 30px;
+}
+
+.number{
+	font-size: 6rem;
+	color: rgb(230, 215, 215);
+	text-shadow: rgb(255, 119, 0) 0 0 20px;
+}
+
+.number:hover{
+	color: rgb(255, 119, 0);
+}
+
+.assignment-section:hover + h1{
+	display: none;
+}
+
+h1{
+	color: rgb(255, 119, 0);
+	text-decoration: underline;
+	position: absolute;
+	right: 10vw;
+	bottom: 20vh;
+	font-size: 2rem;
+	text-align: right;
+}
+
+.result{
+	height: 60vh;
+	margin-left: 20px;
+}
+
+.result-container {
+	display: none;
+}
+
+.result-images{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.number-1:hover + .result-container-1 {
+	display:inline;
+}
+
+.name-assignment{
+	font-style: italic;
+	position: absolute;
+	color:rgb(255, 119, 0);
+	font-size: 1.5rem;
+	top: calc(6rem + 40px);
+}
+
+.number-2:hover + .result-container-2 {
+	display:inline;
+
+}
+
+.number-3:hover + .result-container-3 {
+	display:inline;
+}
+
+.result-3{
+	height: 35vh;
+	padding-top: 20px;
+}
+
+.result-images-3{
+	flex-wrap: wrap-reverse;
+}
+
+.number-4:hover + .result-container-4 {
+	display:inline;
+}
+
+.result-images-4{
+	height: 20vh;
+}
